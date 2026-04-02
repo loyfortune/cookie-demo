@@ -1,0 +1,1066 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cookie-demo</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="work-sans-uniquifier overflow-x-hidden">
+    <div class="bg-gray-800 p-5">
+      <nav
+        class="flex items-center justify-between max-w-3xl lg:max-w-7xl mx-auto"
+      >
+        <div class="flex items-center gap-x-3">
+          <a href="index.html" class="rounded-xl"
+            ><img
+              class="w-8 h-8"
+              src="https://cookie-demo.netlify.app/assets/img/cookie.png"
+              alt="cookie"
+          /></a>
+          <a
+            href="Blog.html"
+            class="text-gray-50 p-2 hover:text-gray-300 hidden lg:inline-flex"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-file-earmark-text mr-2 text-gray-300 text-lg leading-lg"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5"
+              />
+              <path
+                d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"
+              />
+            </svg>
+            <span class="text-xs font-bold">BLOG</span></a
+          >
+        </div>
+        <div class="lg:flex items-center gap-x-6 hidden">
+          <a href="https://www.facebook.com"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-facebook text-gray-300 text-lg"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+              />
+            </svg>
+          </a>
+          <a href="https://www.twitter.com"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-twitter text-gray-300 text-lg"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"
+              />
+            </svg>
+          </a>
+          <a href="https://github.com/abhinavs/cookie"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-github text-gray-300 text-lg"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+              />
+            </svg>
+          </a>
+          <button
+            class="bg-white flex items-center gap-x-2 py-2 px-3 rounded text-gray-800 cursor-pointer"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-arrow-right-circle-fill text-xs font-bold"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
+              />
+            </svg>
+            <span class="text-xs font-bold">SIGN UP</span>
+          </button>
+        </div>
+        <button
+          class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+          type="button"
+          onclick="toggleNavbar('example-collapse-navbar')"
+        >
+          <img src="images/icons8-menu-bar.svg" alt="" class="w-6 h-8" />
+        </button>
+      </nav>
+    </div>
+    <div class="mt-18 px-5 max-w-3xl mx-auto">
+      <div
+        class="text-xs tracking-wide uppercase font-semibold text-rose-800 bg-red-100 rounded-lg py-2 px-3 w-full md:w-80 md:px-0 mx-auto md:tracking-widest md:text-center"
+      >
+        Payment SDK for small businesses
+      </div>
+      <h1 class="text-6xl font-semibold mt-5 text-center">
+        Payments made simpler.
+      </h1>
+      <p class="text-gray-500 text-lg mt-8 max-w-xl mx-auto xl:text-center">
+        Payment infra is hard to build and integrate. We make integration easy
+        for small businesses by taking an opionated approach.
+      </p>
+      <a
+        href="index.html"
+        class="py-2 px-5 flex items-center my-7 text-white font-semibold bg-rose-500/90 gap-x-3 rounded-lg hover:bg-rose-700 transition duration-500 transform w-full md:w-50 mx-auto md:justify-center md:tracking-wide md:px-0"
+        ><span>Get Started</span
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-chevron-double-right font-bold"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708"
+          />
+          <path
+            fill-rule="evenodd"
+            d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708"
+          />
+        </svg>
+      </a>
+      <p class="text-gray-500 max-w-lg mx-auto xl:text-center">
+        We only get paid when you get paid. Start using our software for free
+        for first six months.
+      </p>
+      <div
+        class="mt-16 bg-slate-100 p-2 md:p-4 border border-slate-200 rounded shadow"
+      >
+        <p class="text-2xl text-gray-900 font-semibold leading-9">
+          Seamless payments infrastructure is difficult to build and maintain.
+        </p>
+        <p class="mt-12 text-slate-600 text-xl font-semibold">
+          There are regulations to follow, there are taxes to pay. We make your
+          payment infra easy, so that you can focus on your business and not
+          cashflow
+        </p>
+        <p class="text-gray-600 my-5">
+          We do it using our automated AI enabled software and simple to use
+          SDKs that are available in all the major programmming languages. If
+          you need any help, we are a chat message away!
+        </p>
+        <a
+          href="index.html"
+          class="py-2 px-5 flex items-center text-white font-semibold bg-rose-500/90 gap-x-3 rounded-lg hover:bg-rose-700 transition duration-500 transform w-full md:w-50 mx-auto md:justify-center md:tracking-wide md:px-0"
+          ><span>Get Started</span
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-chevron-double-right font-semibold"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708"
+            />
+            <path
+              fill-rule="evenodd"
+              d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708"
+            />
+          </svg>
+        </a>
+        <span
+          class="text-gray-600 text-sm md:text-[16px] flex justify-center my-3"
+          ><span><img src="images/icons8-curved-arrow-12.png" alt="" /></span>
+          It takes less than 5 minutes to integrate our SDK.</span
+        >
+      </div>
+    </div>
+    <div class="mt-22 px-6">
+      <div
+        class="uppercase text-yellow-800 text-xs font-semibold tracking-wide bg-yellow-100 py-2 px-3 rounded-lg w-full md:w-60 lg:px-0 mx-auto lg:tracking-widest lg:text-center"
+      >
+        Why choose us?
+      </div>
+      <h2
+        class="text-gray-900 text-3xl font-semibold mt-4 mb-5 max-w-5xl mx-auto lg:text-center"
+      >
+        We know tech, we know finance. We are fintech experts.
+      </h2>
+      <p class="text-gray-400 max-w-3xl lg:mx-auto lg:text-center">
+        We know how to handle taxation for all the countried we operate in. We
+        care for our customers and help them manage cashflows.
+      </p>
+      <div
+        class="mt-10 space-y-8 space-x-8 grid grid-cols-1 md:grid-cols-2 max-w-7xl mx-auto"
+      >
+        <div class="flex gap-x-3">
+          <div
+            class="bg-rose-500 relative py-3 px-6 h-12 rounded-lg text-white"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="currentColor"
+              class="bi bi-code-slash max-w-10 absolute left-2 top-2"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"
+              />
+            </svg>
+          </div>
+          <div class="space-y-2">
+            <h4 class="text-gray-800 text-lg font-bold">Powerful API</h4>
+            <p class="text-gray-500">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
+              impedit perferendis suscipit eaque, iste dolor cupiditate
+              blanditiis ratione.
+            </p>
+          </div>
+        </div>
+        <div class="flex gap-x-3">
+          <div
+            class="bg-rose-500 relative py-3 px-6 h-12 rounded-lg text-white"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="currentColor"
+              class="bi bi-filetype-js max-w-10 absolute left-2 top-2"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M14 4.5V14a2 2 0 0 1-2 2H8v-1h4a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zM3.186 15.29a1.2 1.2 0 0 1-.111-.449h.765a.58.58 0 0 0 .255.384q.105.073.249.114.143.041.319.041.246 0 .413-.07a.56.56 0 0 0 .255-.193.5.5 0 0 0 .085-.29.39.39 0 0 0-.153-.326q-.151-.12-.462-.193l-.619-.143a1.7 1.7 0 0 1-.539-.214 1 1 0 0 1-.351-.367 1.1 1.1 0 0 1-.123-.524q0-.366.19-.639.19-.272.528-.422.336-.15.776-.149.457 0 .78.152.324.153.5.41.18.255.2.566h-.75a.56.56 0 0 0-.12-.258.6.6 0 0 0-.247-.181.9.9 0 0 0-.369-.068q-.325 0-.513.152a.47.47 0 0 0-.184.384q0 .18.143.3a1 1 0 0 0 .405.175l.62.143q.327.075.566.211.24.136.375.358t.135.56q0 .37-.188.656a1.2 1.2 0 0 1-.539.439q-.351.158-.858.158-.381 0-.665-.09a1.4 1.4 0 0 1-.478-.252 1.1 1.1 0 0 1-.29-.375m-3.104-.033A1.3 1.3 0 0 1 0 14.791h.765a.6.6 0 0 0 .073.27.5.5 0 0 0 .454.246q.285 0 .422-.164.138-.165.138-.466v-2.745h.79v2.725q0 .66-.357 1.005-.354.345-.984.345a1.6 1.6 0 0 1-.569-.094 1.15 1.15 0 0 1-.407-.266 1.1 1.1 0 0 1-.243-.39"
+              />
+            </svg>
+          </div>
+          <div class="space-y-2">
+            <h4 class="text-gray-800 font-bold text-lg">
+              Easy to integrate SDK
+            </h4>
+            <p class="text-gray-500">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
+              impedit perferendis suscipit eaque, iste dolor cupiditate
+              blanditiis ratione.
+            </p>
+          </div>
+        </div>
+        <div class="flex gap-x-3">
+          <div
+            class="bg-rose-500 relative py-3 px-6 h-12 rounded-lg text-white"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="currentColor"
+              class="bi bi-cash max-w-10 absolute left-2 top-2"
+              viewBox="0 0 16 16"
+            >
+              <path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4" />
+              <path
+                d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2z"
+              />
+            </svg>
+          </div>
+          <div class="space-y-2">
+            <h4 class="text-gray-800 font-bold text-lg">
+              Low Transaction Cost
+            </h4>
+            <p class="text-gray-500">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
+              impedit perferendis suscipit eaque, iste dolor cupiditate
+              blanditiis ratione.
+            </p>
+          </div>
+        </div>
+        <div class="flex gap-x-3">
+          <div
+            class="bg-rose-500 relative py-3 px-6 h-12 rounded-lg text-white"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="currentColor"
+              class="bi bi-shield-check max-w-10 absolute left-2 top-2"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M5.338 1.59a61 61 0 0 0-2.837.856.48.48 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.7 10.7 0 0 0 2.287 2.233c.346.244.652.42.893.533q.18.085.293.118a1 1 0 0 0 .101.025 1 1 0 0 0 .1-.025q.114-.034.294-.118c.24-.113.547-.29.893-.533a10.7 10.7 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.8 11.8 0 0 1-2.517 2.453 7 7 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7 7 0 0 1-1.048-.625 11.8 11.8 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 63 63 0 0 1 5.072.56"
+              />
+              <path
+                d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"
+              />
+            </svg>
+          </div>
+          <div class="space-y-2">
+            <h4 class="text-gray-800 font-bold text-lg">Powerful Dashboard</h4>
+            <p class="text-gray-500">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
+              impedit perferendis suscipit eaque, iste dolor cupiditate
+              blanditiis ratione.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-30 px-6">
+      <div
+        class="text-xs text-center tracking-wide uppercase font-semibold text-rose-800 bg-red-100 rounded-lg py-2 px-3 w-full md:w-35 md:px-0 mx-auto md:tracking-widest"
+      >
+        pricing
+      </div>
+      <h2 class="text-3xl text-center font-medium text-gray-900 my-4">
+        We get paid only if you get paid!
+      </h2>
+      <p class="text-gray-500 text-center">
+        Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical.
+      </p>
+      <div
+        class="flex items-center justify-center w-fit mx-auto border-2 border-rose-500 rounded-md mt-6"
+      >
+        <button
+          class="text-white font-medium bg-rose-500 rounded-l py-1 px-4 cursor-pointer"
+        >
+          Monthly
+        </button>
+        <button class="text-gray-600 font-medium px-4 py-1 cursor-pointer">
+          Annually
+        </button>
+      </div>
+      <div
+        class="mt-16 space-y-6 md:space-x-7 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 max-w-4xl lg:max-w-7xl mx-auto"
+      >
+        <div class="p-5 border-2 border-gray-400 rounded-md">
+          <h6 class="text-gray-600 font-medium uppercase tracking-wide">
+            start
+          </h6>
+          <h4
+            class="text-gray-900 text-5xl mt-3 pb-4 border-b border-b-gray-200 w-full"
+          >
+            Free
+          </h4>
+          <ul class="my-4 space-y-2 list-none">
+            <li class="flex gap-x-1 items-center">
+              <span
+                class="w-4 h-4 flex items-center bg-gray-400 text-white rounded-full"
+                ><svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2.5"
+                  class="w-3 h-3 mx-auto"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M20 6L9 17l-5-5"></path></svg></span
+              ><span class="text-gray-500">Vexillologist pitchfork</span>
+            </li>
+            <li class="flex gap-x-1 items-center">
+              <span
+                class="w-4 h-4 flex items-center bg-gray-400 text-white rounded-full"
+                ><svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2.5"
+                  class="w-3 h-3 mx-auto"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M20 6L9 17l-5-5"></path></svg></span
+              ><span class="text-gray-500">Tumeric plaid portland</span>
+            </li>
+            <li class="flex gap-x-1 items-center">
+              <span
+                class="w-4 h-4 flex items-center bg-gray-400 text-white rounded-full"
+                ><svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2.5"
+                  class="w-3 h-3 mx-auto"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M20 6L9 17l-5-5"></path></svg></span
+              ><span class="text-gray-500">Mixtape chillwave tumeric</span>
+            </li>
+          </ul>
+          <div class="md:mt-22">
+            <button
+              class="flex items-center justify-between py-2 px-3 bg-gray-400 rounded w-full hover:bg-gray-500 cursor-pointer"
+            >
+              <span class="font-medium">Button</span
+              ><span
+                ><svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-4 h-4 ml-auto"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </span>
+            </button>
+            <span class="text-xs text-gray-600 text-center mt-4"
+              >Literally you probably haven't heard of them jean shorts.</span
+            >
+          </div>
+        </div>
+        <div class="relative p-5 border-2 border-rose-500 rounded-md">
+          <span
+            class="absolute top-0 right-0 text-white text-xs bg-rose-500 uppercase py-0.5 px-2 rounded-bl-md rounded-tr"
+            >popular</span
+          >
+          <h6 class="text-gray-600 font-medium uppercase tracking-wide">pro</h6>
+          <h4
+            class="text-gray-900 text-5xl mt-3 pb-4 border-b border-b-gray-200"
+          >
+            $38<span class="text-gray-500 text-lg mb-1">/mo</span>
+          </h4>
+          <ul class="my-4 space-y-2 list-none">
+            <li class="flex gap-x-1 items-center">
+              <span
+                class="w-4 h-4 flex items-center bg-gray-400 text-white rounded-full"
+                ><svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2.5"
+                  class="w-3 h-3 mx-auto"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M20 6L9 17l-5-5"></path></svg></span
+              ><span class="text-gray-500">Vexillologist pitchfork</span>
+            </li>
+            <li class="flex gap-x-1 items-center">
+              <span
+                class="w-4 h-4 flex items-center bg-gray-400 text-white rounded-full"
+                ><svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2.5"
+                  class="w-3 h-3 mx-auto"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M20 6L9 17l-5-5"></path></svg></span
+              ><span class="text-gray-500">Tumeric plaid portland</span>
+            </li>
+            <li class="flex gap-x-1 items-center">
+              <span
+                class="w-4 h-4 flex items-center bg-gray-400 text-white rounded-full"
+                ><svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2.5"
+                  class="w-3 h-3 mx-auto"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M20 6L9 17l-5-5"></path></svg></span
+              ><span class="text-gray-500">Hexagon neutra unicorn</span>
+            </li>
+            <li class="flex gap-x-1 items-center">
+              <span
+                class="w-4 h-4 flex items-center bg-gray-400 text-white rounded-full"
+                ><svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2.5"
+                  class="w-3 h-3 mx-auto"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M20 6L9 17l-5-5"></path></svg></span
+              ><span class="text-gray-500">Mixtape chillwave tumeric</span>
+            </li>
+          </ul>
+          <div class="md:mt-14">
+            <button
+              class="flex items-center justify-between py-2 px-3 bg-rose-500 rounded w-full hover:bg-rose-600 cursor-pointer"
+            >
+              <span class="font-medium">Button</span
+              ><span
+                ><svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-4 h-4 ml-auto"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </span>
+            </button>
+            <span class="text-xs text-gray-600 text-center mt-4"
+              >Literally you probably haven't heard of them jean shorts.</span
+            >
+          </div>
+        </div>
+        <div class="p-5 border-2 border-gray-400 rounded-md">
+          <h6 class="text-gray-600 font-medium uppercase tracking-wide">
+            business
+          </h6>
+          <h4
+            class="text-gray-900 text-5xl mt-3 pb-4 border-b border-b-gray-200 w-full"
+          >
+            $56<span class="text-gray-500 text-lg mb-1">/mo</span>
+          </h4>
+          <ul class="my-4 space-y-2 list-none">
+            <li class="flex gap-x-1 items-center">
+              <span
+                class="w-4 h-4 flex items-center bg-gray-400 text-white rounded-full"
+                ><svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2.5"
+                  class="w-3 h-3 mx-auto"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M20 6L9 17l-5-5"></path></svg></span
+              ><span class="text-gray-500">Vexillologist pitchfork</span>
+            </li>
+            <li class="flex gap-x-1 items-center">
+              <span
+                class="w-4 h-4 flex items-center bg-gray-400 text-white rounded-full"
+                ><svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2.5"
+                  class="w-3 h-3 mx-auto"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M20 6L9 17l-5-5"></path></svg></span
+              ><span class="text-gray-500">Tumeric plaid portland</span>
+            </li>
+            <li class="flex gap-x-1 items-center">
+              <span
+                class="w-4 h-4 flex items-center bg-gray-400 text-white rounded-full"
+                ><svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2.5"
+                  class="w-3 h-3 mx-auto"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M20 6L9 17l-5-5"></path></svg></span
+              ><span class="text-gray-500">Hexagon neutra unicorn</span>
+            </li>
+            <li class="flex gap-x-1 items-center">
+              <span
+                class="w-4 h-4 flex items-center bg-gray-400 text-white rounded-full"
+                ><svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2.5"
+                  class="w-3 h-3 mx-auto"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M20 6L9 17l-5-5"></path></svg></span
+              ><span class="text-gray-500">Vexillologist pitchfork</span>
+            </li>
+            <li class="flex gap-x-1 items-center">
+              <span
+                class="w-4 h-4 flex items-center bg-gray-400 text-white rounded-full"
+                ><svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2.5"
+                  class="w-3 h-3 mx-auto"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M20 6L9 17l-5-5"></path></svg></span
+              ><span class="text-gray-500">Mixtape chillwave tumeric</span>
+            </li>
+          </ul>
+          <button
+            class="flex items-center justify-between py-2 px-3 bg-gray-400 rounded w-full hover:bg-gray-500 cursor-pointer"
+          >
+            <span class="font-medium">Button</span
+            ><span
+              ><svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-4 h-4 ml-auto"
+                viewBox="0 0 24 24"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </span>
+          </button>
+          <span class="text-xs text-gray-600 text-center mt-4"
+            >Literally you probably haven't heard of them jean shorts.</span
+          >
+        </div>
+        <div class="p-5 border-2 border-gray-400 rounded-md md:mb-6 md:mr-6">
+          <h6 class="text-gray-600 font-medium uppercase tracking-wide">
+            special
+          </h6>
+          <h4
+            class="text-gray-900 text-5xl mt-3 pb-4 border-b border-b-gray-200 w-full"
+          >
+            $72<span class="text-gray-500 text-lg mb-1">/mo</span>
+          </h4>
+          <ul class="my-4 space-y-2 list-none">
+            <li class="flex gap-x-1 items-center">
+              <span
+                class="w-4 h-4 flex items-center bg-gray-400 text-white rounded-full"
+                ><svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2.5"
+                  class="w-3 h-3 mx-auto"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M20 6L9 17l-5-5"></path></svg></span
+              ><span class="text-gray-500">Vexillologist pitchfork</span>
+            </li>
+            <li class="flex gap-x-1 items-center">
+              <span
+                class="w-4 h-4 flex items-center bg-gray-400 text-white rounded-full"
+                ><svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2.5"
+                  class="w-3 h-3 mx-auto"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M20 6L9 17l-5-5"></path></svg></span
+              ><span class="text-gray-500">Tumeric plaid portland</span>
+            </li>
+            <li class="flex gap-x-1 items-center">
+              <span
+                class="w-4 h-4 flex items-center bg-gray-400 text-white rounded-full"
+                ><svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2.5"
+                  class="w-3 h-3 mx-auto"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M20 6L9 17l-5-5"></path></svg></span
+              ><span class="text-gray-500">Hexagon neutra unicorn</span>
+            </li>
+            <li class="flex gap-x-1 items-center">
+              <span
+                class="w-4 h-4 flex items-center bg-gray-400 text-white rounded-full"
+                ><svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2.5"
+                  class="w-3 h-3 mx-auto"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M20 6L9 17l-5-5"></path></svg></span
+              ><span class="text-gray-500">Vexillologist pitchfork</span>
+            </li>
+            <li class="flex gap-x-1 items-center">
+              <span
+                class="w-4 h-4 flex items-center bg-gray-400 text-white rounded-full"
+                ><svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2.5"
+                  class="w-3 h-3 mx-auto"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M20 6L9 17l-5-5"></path></svg></span
+              ><span class="text-gray-500">Mixtape chillwave tumeric</span>
+            </li>
+          </ul>
+          <button
+            class="flex items-center justify-between py-2 px-3 bg-gray-400 rounded w-full hover:bg-gray-500 cursor-pointer"
+          >
+            <span class="font-medium">Button</span
+            ><span
+              ><svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-4 h-4 ml-auto"
+                viewBox="0 0 24 24"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </span>
+          </button>
+          <span class="text-xs text-gray-600 text-center mt-4"
+            >Literally you probably haven't heard of them jean shorts.</span
+          >
+        </div>
+      </div>
+    </div>
+    <div
+      class="px-6 mt-30 mx-auto max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl"
+    >
+      <div
+        class="uppercase text-indigo-800 text-xs font-semibold tracking-wide bg-indigo-100 py-2 px-3 rounded-lg w-full md:w-50 lg:px-0 mx-auto lg:tracking-widest lg:text-center"
+      >
+        testimonials
+      </div>
+      <h3 class="text-gray-900 text-3xl text-center font-medium mt-4">
+        A few words from our customers
+      </h3>
+      <div class="mt-8 flex flex-col gap-8 md:flex-row">
+        <div class="bg-slate-100 border border-slate-300 rounded-lg p-8 h-full">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            class="block w-5 h-5 text-gray-400 mb-4"
+            viewBox="0 0 975.036 975.036"
+          >
+            <path
+              d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"
+            ></path>
+          </svg>
+          <p class="text-gray-500 leading-relaxed">
+            Whereas recognition of the inherent dignity. Whereas recognition of
+            the inherent dignity. Whereas recognition of the inherent dignity.
+            Whereas recognition of the inherent dignity. Whereas recognition of
+            the inherent dignity. Whereas recognition of the inherent dignity.
+          </p>
+          <div class="flex items-center gap-x-4 mt-6">
+            <img
+              alt="testimonial"
+              src="https://dummyimage.com/106x106"
+              class="w-12 h-12 rounded-full shrink-0 object-cover object-center"
+            />
+            <span
+              ><p class="text-gray-900 text-sm tracking-wide font-semibold">
+                Harry Potter
+              </p>
+              <span class="text-gray-500 text-sm uppercase">CFO</span></span
+            >
+          </div>
+        </div>
+        <div class="bg-slate-100 border border-slate-300 rounded-lg p-8 h-full">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            class="block w-5 h-5 text-gray-400 mb-4"
+            viewBox="0 0 975.036 975.036"
+          >
+            <path
+              d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"
+            ></path>
+          </svg>
+          <p class="text-gray-500 leading-relaxed">
+            Whereas recognition of the inherent dignity. Whereas recognition of
+            the inherent dignity. Whereas recognition of the inherent dignity.
+            Whereas recognition of the inherent dignity. Whereas recognition of
+            the inherent dignity. Whereas recognition of the inherent dignity.
+          </p>
+          <div class="flex items-center gap-x-4 mt-6">
+            <img
+              alt="testimonial"
+              src="https://dummyimage.com/106x106"
+              class="w-12 h-12 rounded-full shrink-0 object-cover object-center"
+            />
+            <span
+              ><p class="text-gray-900 text-sm tracking-wide font-semibold">
+                Rose Rosewood
+              </p>
+              <span class="text-gray-500 text-sm uppercase"
+                >designer</span
+              ></span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="px-7 mt-32 max-w-6xl mx-auto">
+      <div
+        class="uppercase text-yellow-800 text-xs font-semibold tracking-wide bg-yellow-100 py-2 px-3 rounded-lg w-full md:w-35 lg:px-0 mx-auto lg:tracking-widest lg:text-center"
+      >
+        faqs
+      </div>
+      <h3 class="text-gray-900 text-3xl font-bold mt-4 lg:text-center">
+        Frequently Asked Questions
+      </h3>
+      <div class="mb-18 mt-14 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="px-2">
+          <h4 class="text-gray-900 text-lg font-semibold">
+            What is a home energy rating?
+          </h4>
+          <p class="text-gray-500 mt-2">
+            A home energy rating is an estimated calculation into a homes
+            potential energy usage, which will determine the amount of heating
+            and cooling required to make its occupants comfortable. It produces
+            a star rating dependant on the amount of heating and cooling loads
+            which will be required, from 0 to 10 stars.
+          </p>
+        </div>
+        <div class="px-2">
+          <h4 class="text-gray-900 text-lg font-semibold">
+            What is a home energy rating?
+          </h4>
+          <p class="text-gray-500 mt-2">
+            A home energy rating is an estimated calculation into a homes
+            potential energy usage, which will determine the amount of heating
+            and cooling required to make its occupants comfortable. It produces
+            a star rating dependant on the amount of heating and cooling loads
+            which will be required, from 0 to 10 stars.
+          </p>
+        </div>
+        <div class="px-2">
+          <h4 class="text-gray-900 text-lg font-semibold">
+            What is the general cost of an energy rating?
+          </h4>
+          <p class="text-gray-500 mt-3">
+            Simple energy rating prices vary greatly on the size and type of
+            building, generally an energy rating will cost somewhere between
+            $130 to $700+.
+          </p>
+        </div>
+        <div class="px-2">
+          <h4 class="text-gray-900 text-lg font-semibold">
+            What information do I need to supply for an energy rating to be
+            completed??
+          </h4>
+          <p class="text-gray-500 mt-2">
+            The information required to complete a full and comprehensive energy
+            report are the following final working drawings: Site Plan, Floor
+            Plan, Elevations, Sections, Lighting layout and window schedule
+            (including sizes of the existing windows).
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gray-100">
+      <div
+        class="py-10 px-6 h-62 flex flex-col lg:flex-row lg:justify-between lg:items-center gap-y-6 max-w-7xl mx-auto"
+      >
+        <h3 class="text-3xl md:text-4xl max-w-lg font-bold text-gray-900">
+          World class payments infra
+          <span class="text-indigo-600">at your finger tips</span>
+        </h3>
+        <span class="flex items-center gap-x-3">
+          <a
+            href="#"
+            class="text-white py-3 px-6 font-semibold rounded-lg bg-rose-600"
+            >Sign up</a
+          >
+          <a
+            href="#"
+            class="py-3 px-6 text-indigo-600 font-semibold rounded-lg bg-white"
+            >Login</a
+          >
+        </span>
+      </div>
+    </div>
+    <footer class="max-w-4xl md:max-w-5xl lg:max-w-7xl mx-auto">
+      <div
+        class="py-16 px-5 bg-gray-900 flex items-center md:justify-between gap-y-8 gap-x-12 flex-col md:flex-row"
+      >
+        <div class="text-center md:text-left max-w-2xs">
+          <div
+            class="flex items-center justify-center md:justify-start gap-x-3"
+          >
+            <img
+              class="w-12 h-12"
+              src="https://cookie-demo.netlify.app/assets/img/cookie.png"
+              alt="Cookie"
+            /><span class="text-xl text-white font-semibold">Cookie</span>
+          </div>
+          <p class="text-sm text-gray-400 mt-3">
+            Cookie is a Jekyll and Tailwind CSS based landing website
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="text-center md:text-left">
+            <h6 class="text-white font-semibold tracking-wide">USEFUL LINKS</h6>
+            <div class="text-gray-400 mt-4 space-y-2 font-medium">
+              <a href="./About.html" class="hover:text-white block">About</a>
+              <a href="./Blog.html" class="hover:text-white block">Blog</a>
+              <a
+                href="https://www.github.com/abhinavs"
+                class="hover:text-white block"
+                >GitHub</a
+              >
+              <a
+                href="https://www.twitter.com/abhinav"
+                class="hover:text-white block"
+                >Twitter</a
+              >
+            </div>
+          </div>
+          <div class="text-center md:text-left">
+            <h6 class="text-white font-semibold tracking-wide">
+              OTHER RESOURCES
+            </h6>
+            <div class="text-gray-400 mt-4 space-y-2 font-medium">
+              <a href="#" class="hover:text-white block">Terms & Condition</a>
+              <a href="" class="hover:text-white block">Privacy policy</a>
+              <a href="" class="hover:text-white block">Contacts</a>
+              <a href="" class="hover:text-white block">Code</a>
+            </div>
+          </div>
+          <div class="text-center md:text-left">
+            <h6 class="text-white font-semibold tracking-wide">CATEGORIES</h6>
+            <div class="text-gray-400 mt-4 space-y-2 font-medium">
+              <span class="hover:text-white block">First Link</span>
+              <span class="hover:text-white block">Second Link</span>
+              <span class="hover:text-white block">Third Link</span>
+              <span class="hover:text-white block">Fourth</span>
+            </div>
+          </div>
+          <div class="text-center md:text-left">
+            <h6 class="text-white font-semibold tracking-wide">CATEGORIES</h6>
+            <div class="text-gray-400 mt-4 space-y-2 font-medium">
+              <span class="hover:text-white block">First Link</span>
+              <span class="hover:text-white block">Second Link</span>
+              <span class="hover:text-white block">Third Link</span>
+              <span class="hover:text-white block">Fourth</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-gray-800 text-gray-400 text-sm py-3 px-4 flex items-center gap-3 flex-col md:flex-row md:justify-between"
+      >
+        <div class="flex items-center gap-2 flex-col sm:flex-row">
+          <span
+            >© 2022 Cookie —
+            <a href="https://twitter.com/abhinav" class="text-gray-500"
+              >@abhinav</a
+            >
+            • Powered by
+            <a
+              href="https://www.soopr.co/"
+              class="font-semibold hover:text-indigo-600"
+              >Soopr</a
+            >
+            • </span
+          ><span
+            >Theme
+            <a
+              href="https://github.com/abhinavs/cookie"
+              class="font-semibold hover:text-indigo-600"
+              >Cookie</a
+            ></span
+          >
+        </div>
+        <div class="flex items-center gap-x-3">
+          <svg
+            fill="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="w-5 h-5"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+            ></path>
+          </svg>
+          <svg
+            fill="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="w-5 h-5"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+            ></path>
+          </svg>
+          <svg
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="w-5 h-5"
+            viewBox="0 0 24 24"
+          >
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path
+              d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
+            ></path>
+          </svg>
+          <svg
+            fill="currentColor"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="0"
+            class="w-5 h-5"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke="none"
+              d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+            ></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
